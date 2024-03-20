@@ -13,8 +13,8 @@ function App() {
                 <Routes>
                     <Route path="/write" element={<WritePage />} />
                     <Route path="/main" element={<MainPage />} />
-                    <Route path="/edit" element={<EditPage />} />
-                    <Route path="/content" element={<ContentPage />} />
+                    <Route path="/edit/:id" element={<EditPage />} />
+                    <Route path="/content/:id" element={<ContentPage />} />
                     <Route path="/list" element={<ListPage />} />
                 </Routes>
             </Router>

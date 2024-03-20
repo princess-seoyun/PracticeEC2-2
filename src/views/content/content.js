@@ -9,7 +9,7 @@ function ContentPage() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`http://localhost:8083/diary/content/${id}`)
+        axios.get(`http://54.180.163.81:8082/diary/content/${id}`)
             .then(response => {
                 setContent(response.data);
             })
@@ -26,7 +26,7 @@ function ContentPage() {
 
     // 삭제 버튼 클릭 이벤트 핸들러
     const handleDelete = () => {
-        axios.get(`http://localhost:8083/diary/delete/${id}`)
+        axios.get(`http://54.180.163.81:8082/diary/delete/${id}`)
             .then(response => {
                 // 성공 시 팝업 표시
                 alert('삭제 성공');
