@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+## AWS build 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/princess-seoyun/PracticeEC2-2/assets/107830173/c4723999-5420-4e83-879f-fbc874b06254)
 
-## Available Scripts
+강사님이 제공해주신 인프라스트럭처 설계 사진
 
-In the project directory, you can run:
 
-### `npm start`
+## 소개
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+이 저장소는 WEB 배포를 위해 생성한 레포지토리입니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ 유튜버 **서타몽** 님의 유튜브 강의를 통해 정리한 내용을 블로그에 간단한 필기와 정리했습니다.
 
-### `npm test`
+풀스택 공부 및 AWS 의 개인 프로젝트를 위해 간단한 게시한 웹사이트 구현 진행 중입니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 블로그 내용
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+서타몽님 영상 참고
+- [블로그 포스트 1](https://thisiswatchworld.tistory.com/15): 가상 네트워크 구축하기(VPC, 서브넷, 인터넷 게이트웨이, 보안 그룹 생성)
+- [블로그 포스트 1](https://thisiswatchworld.tistory.com/16): EC2 & RDS 생성
+- [블로그 포스트 1](https://thisiswatchworld.tistory.com/17): 빌드 환경 구축
+- [블로그 포스트 1](https://thisiswatchworld.tistory.com/18): React 프로젝트 설정 변경 및 Spring boot pm2 로 배포)
+- [블로그 포스트 1](https://thisiswatchworld.tistory.com/19): React EC2 에 빌드 및 배포
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 실습 자료
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+여기에는 AWS를 사용한 실습을 위한 추가 자료가 포함될 예정입니다. 해당 내용은 주기적으로 업데이트될 것입니다.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+참고로 배포 공부를 먼저 하기 위해 정말 기본 동작만 구현해둔 상태입니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+pm2 로 무중단 배포까지 완료
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![image](https://github.com/princess-seoyun/PracticeEC2-2/assets/107830173/37716d11-e110-4e40-995d-790a7c017c79)
 
-## Learn More
+![image](https://github.com/princess-seoyun/PracticeEC2-2/assets/107830173/9b9a986f-822f-4e7a-a54f-f11525378319)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**프론트(React.js) : PublicIPs: 13.124.136.66 에서 3000 포트로 들어가기 성공**
 
-### Code Splitting
+![image](https://github.com/princess-seoyun/PracticeEC2-2/assets/107830173/f1961162-2b10-41e7-9427-f4a996e857da)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+**백엔드(Spring) : PublicIPs: 54.180.163.81 에서 8082 포트로 들어가기 성공**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![image](https://github.com/princess-seoyun/PracticeEC2-2/assets/107830173/30ffeecf-a282-4648-a240-854848e45ac6)
 
-### Making a Progressive Web App
+**작성한 제목과 내용이 DB(MySQL) 에 저장되는 것까지 확인 완료**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
